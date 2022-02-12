@@ -1,10 +1,5 @@
 {
 	"logRequestList" :	[
-		{"id":"scsmbstgra","state":"STARTED","host":"12345","type":"APPLICATION_LOG","timestamp":"1491377495217"},
-		{"id":"scsmbstgra","state":"FINISHED","timestamp":"1491377495217"},
-		{"id":"scsmbstgra","state":"STARTED","host":"12345","type":"APPLICATION_LOG","timestamp":"1491377495217"},
-		{"id":"scsmbstgra","state":"FINISHED","timestamp":"1491377495217"},
-		{"id":"scsmbstgra","state":"STARTED","host":"12345","type":"APPLICATION_LOG","timestamp":"1491377495217"},
-		{"id":"scsmbstgra","state":"FINISHED","host":"12345","type":"APPLICATION_LOG","timestamp":"1491377495217"}
+		{"id":"","state":"","host":"","type":"","timestamp":""}
 	]
 }

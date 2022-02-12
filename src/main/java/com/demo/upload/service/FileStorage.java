@@ -1,4 +1,4 @@
-package com.demo.upload.service.impl;
+package com.demo.upload.service;
 
 import com.demo.upload.dto.LogRequest;
 import com.demo.upload.exception.ServiceException;

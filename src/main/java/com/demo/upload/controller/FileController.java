@@ -2,7 +2,7 @@ package com.demo.upload.controller;
 
 import com.demo.upload.dto.LogRequest;
 import com.demo.upload.exception.ServiceException;
-import com.demo.upload.service.impl.FileStorage;
+import com.demo.upload.service.FileStorage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,9 +13,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.demo.upload.service.impl.FileStorageService;
-
-import java.io.IOException;
 import java.util.List;
 
 @RestController

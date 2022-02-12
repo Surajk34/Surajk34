@@ -8,6 +8,7 @@ import com.demo.upload.dto.FileRequest;
 import com.demo.upload.dto.LogRequest;
 import com.demo.upload.exception.ServiceException;
 import com.demo.upload.repository.LogFileRepository;
+import com.demo.upload.service.FileStorage;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,7 +17,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 @Service
-public class FileStorageService implements FileStorage{
+public class FileStorageService implements FileStorage {
 
 	private static final Logger logger = LoggerFactory.getLogger(FileStorageService.class);
 
@@ -30,9 +31,7 @@ public class FileStorageService implements FileStorage{
 		logger.debug("File Request log size {}", fileRequestDTO.getLogRequestList().size());
 		List<LogRequest> logRequestList = fileRequestDTO.getLogRequestList();
 
-		for(LogRequest logRequest : logRequestList) {
-			logFileRepository.save(logRequest);
-		}
+		logRequestList.stream().forEach(logRequest -> logFileRepository.save(logRequest));
 		return logFileRepository.findAll();
 	}
 

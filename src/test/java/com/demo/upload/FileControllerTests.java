@@ -1,7 +1,7 @@
 package com.demo.upload;
 
 import com.demo.upload.exception.ServiceException;
-import com.demo.upload.service.impl.FileStorage;
+import com.demo.upload.service.FileStorage;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -11,7 +11,6 @@ import org.springframework.mock.web.MockMultipartFile;
 import java.io.IOException;
 import java.io.InputStream;
 
-@SpringBootTest
 @AutoConfigureMockMvc
 public class FileControllerTests {
 
